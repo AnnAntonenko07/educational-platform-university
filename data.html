@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Освітня платформа ЧДТУ</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header class="container">
+        <span class="logo">
+            <img src="https://fht.chdtu.edu.ua/wp-content/themes/education-zone-child/images/chdtulogo.png" alt="Логотип ЧДТУ">
+        </span>
+        <nav>
+            <ul>
+                <li><a href="main.html">Мої курси</a></li>
+                <li><a href="schedule.html">Розклад</a></li>
+                <li><a href="profile.html" class="active">Профіль користувача</a></li>
+                <li class="btn"><a href="index.html">Вихід</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile-container">
+        <div class="tabs">
+            <button onclick="window.location.href='profile.html'">Загальна інформація</button>
+            <button class="active" onclick="window.location.href='data.html'">Академічні дані</button>
+        </div>
+
+        <div class="grades-container">
+            <h2>Оцінки за період з 03.02-28.02</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Предмет</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>Середній бал</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web технології та дизайн</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>11</td>
+                        <td>11</td>
+                        <td class="avg"></td>
+                    </tr>
+                    <tr>
+                        <td>Англійська мова B1</td>
+                        <td>10</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>11</td>
+                        <td></td>
+                        <td class="avg"></td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX дизайн</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>11</td>
+                        <td></td>
+                        <td></td>
+                        <td class="avg"></td>
+                    </tr>
+                    <tr>
+                        <td>Vue.js</td>
+                        <td>11</td>
+                        <td>7</td>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td class="avg"></td>
+                    </tr>
+                    <tr>
+                        <td>Архітектура програмного забезпечення</td>
+                        <td>11</td>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="avg"></td>
+                    </tr>
+                    <tr>
+                        <td>Автоматизоване тестування</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td></td>
+                        <td></td>
+                        <td class="avg"></td>
+                    </tr>
+                    <tr>
+                        <td>Бізнес планування</td>
+                        <td>6</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td></td>
+                        <td class="avg"></td>
+                    </tr>
+                    <tr>
+                        <td>C#/.NET розробка</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td></td>
+                        <td class="avg"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <div class="container-data">
+        <h3>Відвідуваність лютий 2025</h3>
+        <div class="bar">
+            <div class="day present">1</div>
+            <div class="day present">2</div>
+            <div class="day present">3</div>
+            <div class="day absent">4</div>
+            <div class="day present">5</div>
+            <div class="day present">6</div>          
+            <div class="day present">7</div>
+            <div class="day present">8</div>           
+            <div class="day present">9</div>
+            <div class="day present">10</div>
+            <div class="day present">11</div>
+            <div class="day present">12</div>
+            <div class="day present">13</div>
+            <div class="day present">14</div>
+            <div class="day present">15</div>
+            <div class="day absent">16</div>
+            <div class="day present">17</div>
+            <div class="day present">18</div>
+            <div class="day present">19</div>
+            <div class="day present">20</div> 
+            <div class="day present">21</div>
+            <div class="day present">22</div>
+            <div class="day present">23</div>
+            <div class="day absent">24</div>
+            <div class="day present">25</div>
+            <div class="day present">26</div>
+            <div class="day absent">27</div>
+            <div class="day present">28</div>
+            
+        </div>
+        </div>
+    <div class="upload-container">
+        <p class="upload-text">Завантаж свої сертифікати/дипломи з пройденими курсами/вебінарами та отримуй бали активності!</p>
+        
+        <label class="upload-button">
+            <span class="material-symbols-light--download"></span> Завантажити
+            <input type="file" id="fileInput">
+        </label>
+    
+        <div class="file-info" id="fileInfo"></div>
+    </div>
+        
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>© ЧДТУ, 2025</p>
+</footer>
+</html>
